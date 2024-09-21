@@ -43,6 +43,7 @@ const CompShowBlogs = () => {
                                     <td> { blog.title } </td>
                                     <td> { blog.content } </td>
                                     <td>
+										 {<Link to={`/create`} className='btn btn-success'><i className="fas fa-plus"></i></Link>}    
                                          {<Link to={`/edit/${blog.id}`} className='btn btn-info'><i className="fas fa-edit"></i></Link>}
                                         <button onClick={ ()=>deleteBlog(blog.id) } className='btn btn-danger'><i className="fas fa-trash-alt"></i></button>
                                     </td>

@@ -54,6 +54,9 @@ const CompEditBlog = () => {
         />
     </div>
     <button type="submit" className="btn btn-primary">Actualizar</button>
+	<button type='button' className='btn btn-secondary' onClick={() => window.history.back()} style={{ marginLeft: '10px' }}>
+    Atrás
+    </button>
 </form>
 
     </div>
